@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Build and Release Folders
 bin/
 bin-debug/
@@ -46,3 +47,10 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+=======
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+>>>>>>> temp
