@@ -13,10 +13,14 @@
   <tbody>
   <tr ng-repeat="employee in allEmployees">
     <td>{{ employee.id }}</td>
-    <td>{{ employee.firstName }}</td>
+    <td><a ng-href="#/details/{{ employee.id }}" >{{ employee.firstName }}</a></td>
     <td>{{ employee.lastName }}</td>
     <td>{{ employee.email }}</td>
     <td>{{ employee.city }}</td>
+    <td align="center">
+      <a ng-href="#/update/{{ employee.id }}"><span
+        class="glyphicon glyphicon-edit"></span></a>
+    </td>
   </tr>
   </tbody>
 </table>

@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Edit Employee:</h2>
+  <form role="form" ng-submit="updateEmployee()" ng-init="initEmployee()">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input ng-model="employee.firstName" type="first_name" class="form-control" id="firstName" placeholder="Enter First Name...">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input ng-model="employee.lastName" type="lastName" class="form-control" id="lastName" placeholder="Enter Last Name...">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input ng-model="employee.email" type="email" class="form-control" id="email" placeholder="Enter email...">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input ng-model="employee.city" type="city" class="form-control" id="city" placeholder="Enter City...">
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input ng-model="employee.username" type="username" class="form-control" id="username" placeholder="Enter Username...">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input ng-model="employee.password" type="password" class="form-control" id="pwd" placeholder="Enter password...">
+    </div>
+    <p><button type="submit" class="btn btn-success" >Update</button></p>
+  </form>
+  <p><a ng-href="#/" class="btn btn-primary">Back to Home</a></p>
+</div>
