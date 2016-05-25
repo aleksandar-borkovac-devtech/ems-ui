@@ -20,6 +20,8 @@
     <td align="center">
       <a ng-href="#/update/{{ employee.id }}"><span
         class="glyphicon glyphicon-edit"></span></a>
+      <button type="button" class="btn btn-link" ng-click="deleteEmployee(employee.id, $index)"><span
+        class="glyphicon glyphicon-trash"></span></button>
     </td>
   </tr>
   </tbody>
