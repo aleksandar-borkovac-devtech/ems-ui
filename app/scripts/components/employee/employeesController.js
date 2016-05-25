@@ -14,4 +14,15 @@ angular.module('emsUiApp')
           console.log(data);
         });
     };
+    $scope.deleteEmployee = function (id, index) {
+      $http
+        .delete('http://localhost:8080/api/employee/' + id)
+        .success(function() {
+          $scope.allEmployees.splice(index, 1);
+        })
+        .error(function(data) {
+          alert('Something went wrong! Employee not deleted!');
+          console.log(data);
+        });
+    };
   });
