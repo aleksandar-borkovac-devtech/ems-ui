@@ -1,0 +1,14 @@
+<div class="container" ng-init="getEmployee()">
+  <table class="table table-hover">
+    <h2>Employee name:</h2>
+    <br/>
+    <ul class="list-group">
+      <li class="list-group-item">First Name: {{ employee.firstName }}</li>
+      <li class="list-group-item">Last Name: {{ employee.lastName }}</li>
+      <li class="list-group-item">Email: {{ employee.email }}</li>
+      <li class="list-group-item">City: {{ employee.city }}</li>
+      <li class="list-group-item">Username: {{ employee.username }}</li>
+    </ul>
+  </table>
+  <p><a ng-href="#/" class="btn btn-primary">Back to Home</a></p>
+</div>
