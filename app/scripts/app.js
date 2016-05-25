@@ -19,9 +19,13 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/customer', {
         templateUrl: 'scripts/components/customer/customerView.html',
         controller: 'CustomerController'
+      })
+      .when('/', {
+        templateUrl: 'scripts/components/employee/employeesView.html',
+        controller: 'EmployeesController'
       })
       .otherwise({
         redirectTo: '/'
