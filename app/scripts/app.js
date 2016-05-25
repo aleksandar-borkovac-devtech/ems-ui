@@ -27,6 +27,10 @@ angular
         templateUrl: 'scripts/components/employee/employeesView.html',
         controller: 'EmployeesController'
       })
+      .when('/add', {
+        templateUrl: 'scripts/components/employee/addEmployee/addEmployeeView.html',
+        controller: 'AddEmployeeController'
+      })
       .otherwise({
         redirectTo: '/'
       });
